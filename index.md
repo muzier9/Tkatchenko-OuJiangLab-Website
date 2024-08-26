@@ -1,8 +1,22 @@
 ---
+title: Home
+carousels:
+  - images: 
+    - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
 ---
 
-# muzier9DESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# muzier9OuJiangLab
 
+
+{% include section.html full=true %}
+
+{% include carousel.html height="40" unit="%" duration="10" number="1" %}
+
+{% include section.html %}
 
 
 {% include section.html %}
