@@ -20,6 +20,8 @@ Computer Group
 
 {% include section.html %}
 
+# {% include icon.html icon="fa-solid fa-users" %}Computer Group
+
 {% capture content %}
 
 {% include figure.html image="images/photo.jpg" %}
