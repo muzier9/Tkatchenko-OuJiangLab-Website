@@ -1,6 +1,6 @@
 ---
 name: Andrei V. Tkatchenko
-image: images/photo.jpg
+image: images/team/Andrei.jpg
 role: pi
 affiliation: Columbia University
 aliases:
