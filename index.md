@@ -3,6 +3,9 @@ title: Home
 carousels:
   - images: 
     - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
+    - image: /images/team/group_outside.jpg
 ---
 
 # muzier9OuJiangLab
