@@ -14,9 +14,6 @@ carousels:
 
 {% include section.html %}
 
-
-{% include section.html %}
-
 ## Highlights
 
 {% capture text %}
