@@ -5,11 +5,6 @@ carousels:
     - image: /images/team/Andrei.jpg
     - image: /images/team/Andrei.jpg
     - image: /images/team/Andrei.jpg
-    - image: /images/team/group_outside.jpg
-    - image: /images/team/group_outside.jpg
-    - image: /images/team/group_outside.jpg
-    - image: /images/team/group_outside.jpg
-    - image: /images/team/group_outside.jpg
 ---
 
 # muzier9OuJiangLab
