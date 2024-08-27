@@ -2,7 +2,7 @@
 name: Andrei V. Tkatchenko
 image: images/team/Andrei.jpg
 role: pi
-affiliation: Columbia University
+affiliation: Wenzhou Medical University
 aliases:
   - J. Smith
   - J Smith

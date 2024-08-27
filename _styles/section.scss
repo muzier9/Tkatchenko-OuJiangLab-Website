@@ -3,10 +3,16 @@
 
 $page: 1000px;
 $padding: 40px;
+$vertical-padding: 40px;
+$horizontal-padding: 160px;
 
 section {
   padding: $padding max($padding, calc((100% - $page) / 2));
   transition: background var(--transition), color var(--transition);
+}
+
+section[data-size="carousel-news"] {
+  padding: $vertical-padding $horizontal-padding;
 }
 
 section[data-size="wide"] {
@@ -37,3 +43,5 @@ main > section:nth-of-type(odd) {
 main > section:nth-of-type(even) {
   background: var(--background-alt);
 }
+
+

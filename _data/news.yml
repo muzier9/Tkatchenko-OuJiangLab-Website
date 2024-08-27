@@ -1,0 +1,7 @@
+# _data/news.yml
+- title: "新闻标题 1"
+  url: "/news/news-1.html"
+- title: "新闻标题 2"
+  url: "/news/news-2.html"
+- title: "新闻标题 3"
+  url: "/news/news-3.html"
