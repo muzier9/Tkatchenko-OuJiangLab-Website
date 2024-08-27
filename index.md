@@ -4,7 +4,7 @@ carousels:
   - images: 
     - image: ./images/team/Andrei.jpg
     - image: ./images/team/Andrei.jpg
-    - image: ./images/team/Andrei.jpg
+    - image: ../images/team/Andrei.jpg
 ---
 
 # muzier9OuJiangLab
