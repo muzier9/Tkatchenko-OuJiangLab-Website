@@ -453,79 +453,124 @@
   
   
 
-  <section class="background" data-size="1">
+  <section class="background" data-size="full">
     <!--
   background: ;
   dark: ;
-  size: 1;
+  size: full;
 -->
 
-<div class="carousel__holder">
-    <div id="carousel0" class="carousel">
-        
-          <input class="carousel__activator" type="radio" name="carousel0" id="0a" checked>
-        
-          <input class="carousel__activator" type="radio" name="carousel0" id="0b">
-        
-          <input class="carousel__activator" type="radio" name="carousel0" id="0c">
-        
-        
-          
-          
-          
-          
-          <div class="carousel__controls">
-              <label class="carousel__control carousel__control--backward" for="0c"></label>
-              <label class="carousel__control carousel__control--forward" for="0b"></label>
-          </div>
-        
-          
-          
-          
-          
-          <div class="carousel__controls">
-              <label class="carousel__control carousel__control--backward" for="0a"></label>
-              <label class="carousel__control carousel__control--forward" for="0c"></label>
-          </div>
-        
-          
-          
-          
-          
-          <div class="carousel__controls">
-              <label class="carousel__control carousel__control--backward" for="0b"></label>
-              <label class="carousel__control carousel__control--forward" for="0a"></label>
-          </div>
-        
-        <div class="carousel__track">
-          <ul>
+<!-- _includes/left-carousel-news.html -->
+
+<section class="carousel-news-section" data-size="carousel-news">
+  <div class="left-carousel-news-container">
+    <!-- 轮播图模块 -->
+    <div class="left-carousel__holder">
+        <div id="left-carousel0" class="left-carousel">
             
-            <li class="carousel__slide" style="background-image: url('./images/team/group_outside.jpg');">
+              <input class="left-carousel__activator" type="radio" name="left-carousel0" id="0a" checked>
             
-            </li>
-<li class="carousel__slide" style="background-image: url('./images/team/group_outside.jpg');">
+              <input class="left-carousel__activator" type="radio" name="left-carousel0" id="0b">
             
-            </li>
-<li class="carousel__slide" style="background-image: url('./images/team/group_outside.jpg');">
             
-          </li>
+              
+              
+              
+              
+              <div class="left-carousel__controls">
+                  <label class="left-carousel__control left-carousel__control--backward" for="0b"></label>
+                  <label class="left-carousel__control left-carousel__control--forward" for="0b"></label>
+              </div>
+            
+              
+              
+              
+              
+              <div class="left-carousel__controls">
+                  <label class="left-carousel__control left-carousel__control--backward" for="0a"></label>
+                  <label class="left-carousel__control left-carousel__control--forward" for="0a"></label>
+              </div>
+            
+            <div class="left-carousel__track">
+              <ul>
+                
+                <li class="left-carousel__slide" style="background-image: url('./images/team/group_outside.jpg');">
+                
+                </li>
+<li class="left-carousel__slide" style="background-image: url('./images/team/group_outside.jpg');">
+                
+              </li>
 </ul>
-        </div>
-        <div class="carousel__indicators">
-            
-              <label class="carousel__indicator" for="0a"></label>
-            
-              <label class="carousel__indicator" for="0b"></label>
-            
-              <label class="carousel__indicator" for="0c"></label>
-            
+            </div>
+            <div class="left-carousel__indicators">
+                
+                  <label class="left-carousel__indicator" for="0a"></label>
+                
+                  <label class="left-carousel__indicator" for="0b"></label>
+                
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- 新闻模块 -->
+    <div class="news-module">
+      <h2>Latest News</h2>
+      <ul class="news-list">
+        
+          <li><a href="/news/news-1.html">新闻标题 1</a></li>
+        
+          <li><a href="/news/news-2.html">新闻标题 2</a></li>
+        
+          <li><a href="/news/news-3.html">新闻标题 3</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</section>
 
 <style>
-.carousel__holder {width: 100%; position: relative; padding-bottom: 40%; margin: 1rem 0 1rem;}
-.carousel {
+.carousel-news-section {
+  padding: 50px; /* 设置内边距，可根据需要调整 */
+}
+
+.left-carousel-news-container {
+  display: flex;
+
+  width: 100%; /* 确保容器占满父元素的宽度 */
+  max-width: 3000px; /* 设置最大宽度 */
+  margin: 0 auto; /* 居中对齐容器 */
+  gap: 2rem; /* 增加模块间隔 */
+}
+
+.left-carousel__holder {
+  flex: 2;
+  width: 100%;
+  position: relative;
+  padding-bottom: 40%;
+  background: #ffffff; /* 更明亮的背景颜色 */
+  border-radius: 8px; /* 圆角边框 */
+  overflow: hidden; /* 确保内容在边框内显示 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+.news-module {
+  flex: 1;
+  width: 100%;
+  padding: 1.5rem;
+  background: #ffffff; /* 更明亮的背景颜色 */
+  border-radius: 8px; /* 圆角边框 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+.news-module h2 {
+  font-size: 1.75rem; /* 更大且更醒目的标题 */
+  color: #333333; /* 深色标题 */
+  margin-bottom: 1.5rem; /* 这里的间距与列表项的 margin-bottom 一致 */
+  border-bottom: 2px solid #f0f0f0; /* 底部加线以分隔标题与内容 */
+  padding-bottom: 0.5rem;
+}
+
+.left-carousel {
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -533,16 +578,19 @@
   position: absolute;
   padding: 0;
 }
-.carousel__controls,
-.carousel__activator {
+
+.left-carousel__controls,
+.left-carousel__activator {
   display: none;
 }
 
-.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+
+.left-carousel__activator:nth-of-type(1):checked ~ .left-carousel__track {
   -webkit-transform: translateX(-000%);
           transform: translateX(-000%);
 }
-.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+
+.left-carousel__activator:nth-of-type(1):checked ~ .left-carousel__slide:nth-of-type(1) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
@@ -553,19 +601,22 @@
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+
+.left-carousel__activator:nth-of-type(1):checked ~ .left-carousel__controls:nth-of-type(1) {
   display: block;
   opacity: 1;
 }
-.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+
+.left-carousel__activator:nth-of-type(1):checked ~ .left-carousel__indicators .left-carousel__indicator:nth-of-type(1) {
   opacity: 1;
 }
 
-.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+.left-carousel__activator:nth-of-type(2):checked ~ .left-carousel__track {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+
+.left-carousel__activator:nth-of-type(2):checked ~ .left-carousel__slide:nth-of-type(2) {
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
@@ -576,39 +627,18 @@
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+
+.left-carousel__activator:nth-of-type(2):checked ~ .left-carousel__controls:nth-of-type(2) {
   display: block;
   opacity: 1;
 }
-.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  opacity: 1;
-}
 
-.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+.left-carousel__activator:nth-of-type(2):checked ~ .left-carousel__indicators .left-carousel__indicator:nth-of-type(2) {
   opacity: 1;
 }
 
 
-.carousel__control {
+.left-carousel__control {
   height: 30px;
   width: 30px;
   margin-top: -15px;
@@ -624,26 +654,31 @@
   outline: 0;
   z-index: 3;
 }
-.carousel__control:hover {
+
+.left-carousel__control:hover {
   opacity: 1;
 }
-.carousel__control--backward {
+
+.left-carousel__control--backward {
   left: 20px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
-.carousel__control--forward {
+
+.left-carousel__control--forward {
   right: 20px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.carousel__indicators {
+
+.left-carousel__indicators {
   position: absolute;
   bottom: 20px;
   width: 100%;
   text-align: center;
 }
-.carousel__indicator {
+
+.left-carousel__indicator {
   height: 15px;
   width: 15px;
   border-radius: 100%;
@@ -653,10 +688,13 @@
   opacity: 0.35;
   margin: 0 2.5px 0 2.5px;
 }
-.carousel__indicator:hover {
+
+.left-carousel__indicator:hover {
   opacity: 0.75;
 }
-.carousel__track {
+
+.left-carousel__track {
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -668,7 +706,8 @@
   transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
-.carousel__track .carousel__slide {
+
+.left-carousel__track .left-carousel__slide {
   display: block;
   top: 0;
   left: 0;
@@ -676,59 +715,87 @@
   opacity: 1;
 }
 
-.carousel__track .carousel__slide:nth-of-type(1) {
+
+.left-carousel__track .left-carousel__slide:nth-of-type(1) {
   -webkit-transform: translateX(000%);
           transform: translateX(000%);
 }
 
-.carousel__track .carousel__slide:nth-of-type(2) {
+.left-carousel__track .left-carousel__slide:nth-of-type(2) {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
 
-.carousel__track .carousel__slide:nth-of-type(3) {
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
-}
 
-
-.carousel--scale .carousel__slide {
+.left-carousel--scale .left-carousel__slide {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-.carousel__slide {
+
+.left-carousel__slide {
   height: 100%;
   position: absolute;
   opacity: 0;
   overflow: hidden;
+  border-radius: 8px; /* 圆角效果 */
+  background-size: cover;
+  background-position: center;
 }
-.carousel__slide .overlay {height: 100%;}
-.carousel--thumb .carousel__indicator {
+
+.left-carousel__slide .overlay {
+  height: 100%;
+}
+
+.left-carousel--thumb .left-carousel__indicator {
   height: 30px;
   width: 30px;
 }
-.carousel__indicator {
+
+.left-carousel__indicator {
   background-color: #fafafa;
 }
 
-.carousel__slide:nth-of-type(1),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+
+.left-carousel__slide:nth-of-type(1),
+.left-carousel--thumb .left-carousel__indicators .left-carousel__indicator:nth-of-type(1) {
   background-size: cover;
   background-position: center;
 }
 
-.carousel__slide:nth-of-type(2),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+.left-carousel__slide:nth-of-type(2),
+.left-carousel--thumb .left-carousel__indicators .left-carousel__indicator:nth-of-type(2) {
   background-size: cover;
   background-position: center;
 }
 
-.carousel__slide:nth-of-type(3),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-size: cover;
-  background-position: center;
+
+.news-list {
+  list-style: none;
+  padding: 0.5rem 0 0; /* 增加新闻列表的上内边距，减少底部内边距 */
+  margin: 0;
 }
 
+.news-list li {
+  margin-bottom: 1rem; /* 增大新闻条目间距 */
+  padding: 0.7rem 0; /* 添加内边距 */
+  border-bottom: 1px solid #f0f0f0; /* 底部边框 */
+}
+
+.news-list li:last-child {
+  border-bottom: none; /* 最后一项去掉边框 */
+}
+
+.news-list a {
+  text-decoration: none;
+  color: #007bff; /* 使用更加醒目的蓝色 */
+  font-size: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* 平滑过渡 */
+}
+
+.news-list a:hover {
+  color: #0056b3; /* 悬停时颜色变化 */
+  text-decoration: underline; /* 悬停时加下划线 */
+}
 </style>
 
 <script>
@@ -758,10 +825,11 @@
             }
         }
   }
+
   
   setInterval(function(){
     var j=0;
-    var elements = document.querySelectorAll('#carousel0 .carousel__control--forward');
+    var elements = document.querySelectorAll('#left-carousel0 .left-carousel__control--forward');
     for(i=(elements.length - 1);i>-1;i--) {
       if(isVisible(elements[i])) j=i;
     }
