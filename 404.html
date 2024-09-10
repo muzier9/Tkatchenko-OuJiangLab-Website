@@ -39,15 +39,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>404 | OuJiangLab</title>
+<title>404 | Andrei V. Tkatchenko Group of OuJiang Lab</title>
 
-<link rel="icon" href="/Tkatchenko-OuJiangLab-Website/images/icon.png">
+<link rel="icon" href="/Tkatchenko-OuJiangLab-Website/images/icon.jpg">
 
 <meta name="title" content="404">
 <meta name="description" content="Andrei V. Tkatchenko. This is description.">
 
 <meta property="og:title" content="404">
-<meta property="og:site_title" content="OuJiangLab">
+<meta property="og:site_title" content="Andrei V. Tkatchenko Group of OuJiang Lab">
 <meta property="og:description" content="Andrei V. Tkatchenko. This is description.">
 <meta property="og:url" content="https://muzier9.github.io/Tkatchenko-OuJiangLab-Website">
 <meta property="og:image" content="/Tkatchenko-OuJiangLab-Website/images/share.jpg">
@@ -74,7 +74,7 @@
     "headline": "404",
     "publisher": {
       "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "/Tkatchenko-OuJiangLab-Website/images/icon.png" }
+      "logo": { "@type": "ImageObject", "url": "/Tkatchenko-OuJiangLab-Website/images/icon.jpg" }
     },
     "url": "https://muzier9.github.io/Tkatchenko-OuJiangLab-Website"
   }
@@ -86,7 +86,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Lora:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -331,7 +331,7 @@
     
       <span class="title-text" data-tooltip="Home">
         
-          <span class="title">OuJiangLab</span>
+          <span class="title">Andrei V. Tkatchenko Group of OuJiang Lab</span>
         
         
           <span class="subtitle">Andrei V. Tkatchenko</span>
@@ -366,6 +366,12 @@
       
         <a href="/Tkatchenko-OuJiangLab-Website/blog/" data-tooltip="Musings and miscellany">
           Blog
+        </a>
+      
+    
+      
+        <a href="/Tkatchenko-OuJiangLab-Website/join%20us/" data-tooltip="We're hiring!">
+          Join us
         </a>
       
     
@@ -414,6 +420,34 @@
     
 
 
+<div id="container" style="width: 100%; height: 250px;"></div>
+<script type="text/javascript" src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=tyf28VWD9I7sr8Pka4e08RyfB2q4PzQq"></script>
+<script type="text/javascript">
+    // 创建地图实例
+    var map = new BMapGL.Map("container");
+    // 设置中心点及缩放级别
+    var point = new BMapGL.Point(120.812032,27.954886);
+    map.centerAndZoom(point, 18);
+    // 启用鼠标滚轮缩放功能
+    map.enableScrollWheelZoom(true);
+    // 添加标注
+    var marker = new BMapGL.Marker(point);
+    // 添加信息窗口
+    var opts = {
+    width : 10,     // 信息窗口宽度
+    height: 40,     // 信息窗口高度
+    title : "OuJiang Laboratory"  // 信息窗口标题
+}
+    var infoWindow = new BMapGL.InfoWindow('Longwan District, Wenzhou City, Zhejiang Province', opts);
+    // 点标记添加点击事件
+    marker.addEventListener('click', function () {
+        map.openInfoWindow(infoWindow, point);
+    });
+    map.addOverlay(marker);
+</script>
+
+
+
 <footer class="background" style="--image: url('/Tkatchenko-OuJiangLab-Website/images/background.jpg')" data-dark="true" data-size="wide">
   <!--
     <div>
@@ -430,7 +464,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@muzier9DESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:andreiv.tkatchenko@ojlab.ac.cn" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -445,7 +479,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="/Tkatchenko-OuJiangLab-Website" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
@@ -517,12 +551,21 @@
 
   <div>
     © 2024
-    OuJiangLab
+    Andrei V. Tkatchenko Group of OuJiang Lab
+      |  
+    <a href="http://www.ojlab.cn/">
+      OuJiang Laboratory
+    </a>
+      |  
+    <a href="https://www.wmu.edu.cn/">
+      Wenzhou Medical University
+    </a>
       |   Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
+    <a href="https://github.com/muzier9/Tkatchenko-OuJiangLab-Website">
+      Tkatchenko-OuJiangLab-Website
     </a>
   </div>
+
 
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>

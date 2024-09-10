@@ -1,3 +1,4 @@
+@charset "UTF-8";
 [data-dark=false] {
   --primary: #0795d9;
   --secondary: #7dd3fc;
@@ -24,8 +25,8 @@
 
 :root {
   --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
+  --heading: "Poppins", sans-serif;
+  --body: "Lora", sans-serif;
   --code: "Roboto Mono", monospace;
   --large: 1.2rem;
   --xl: 1.4rem;
@@ -39,6 +40,10 @@
   --rounded: 3px;
   --shadow: 0 0 10px 0 var(--overlay);
   --transition: 0.2s ease;
+}
+
+h5 {
+  font-family: var(--xl); /* 标题使用新字体 */
 }
 
 /*# sourceMappingURL=-theme.css.map */
