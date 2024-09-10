@@ -6,6 +6,18 @@ pi:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
+Laboratory manager:
+  icon: fa-solid fa-user
+  description: Laboratory manager
+
+Research Assistant:
+  icon: fa-solid fa-flask
+  description: Research Assistant
+
+Group Leader:
+  icon: fa-solid fa-microscope
+  description: Group Leader
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
@@ -13,6 +25,10 @@ postdoc:
 phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
+
+Master:
+  icon: fa-solid fa-user-graduate
+  description: Master's student
 
 undergrad:
   icon: fa-solid fa-user-graduate

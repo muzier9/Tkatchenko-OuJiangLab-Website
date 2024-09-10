@@ -17,6 +17,7 @@
   %}
   {% assign size = section | regex_scan: "size: (.*);" | default: "page" %}
 
+  <!-- data-size="{{ size }}" -->
   <section
     class="background"
     data-size="{{ size }}"

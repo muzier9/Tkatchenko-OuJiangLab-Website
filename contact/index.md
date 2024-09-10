@@ -1,7 +1,7 @@
 ---
 title: Contact
 nav:
-  order: 6
+  order: 7
   tooltip: Email, address, and location
 ---
 
@@ -11,78 +11,35 @@ nav:
 
 {:.center}
 
-<!--
-{%
-
-
-  include button.html
-
-
-  type="email"
-
-
-  text="jane@smith.com"
-
-
-  link="jane@smith.com"
-
-
-%}
-
-
-{%
-
-
-  include button.html
-
-
-  type="phone"
-
-
-  text="(555) 867-5309"
-
-
-  link="+1-555-867-5309"
-
-
-%}
-
-
-{%
-
-
-  include button.html
-
-
-  type="address"
-
-
-  tooltip="Our location on Google Maps for easy navigation"
-
-
-  link="https://www.google.com/maps"
-
-
-%}
--->
-
-{% include section.html %}
+{% include section.html size="test" %}
 
 {% capture col1 %}
 
-##### Office 5013
-##### Systems genetics and pharmacogenomics of myopia Group 
-##### Ocular diseases and Visual Function Recovery Research Cluster
-##### OuJiang Lab
-##### Yongzhong Street, Longwan District, Wenzhou
-##### China
+ <br><br>
+ <strong>Office 5013</strong>
+ {:.center}
+
+ <strong>Systems genetics and pharmacogenomics of myopia Group</strong>
+ {:.center}
+
+ <strong>Ocular diseases and Visual Function Recovery Research Cluster</strong>
+ {:.center}
+
+ <strong>OuJiang Lab</strong>
+ {:.center}
+
+ <strong>Yongzhong Street, Longwan District, Wenzhou</strong>
+ {:.center}
+
+ <strong>China</strong>
+ {:.center}
 
 {%
   include button.html
   type="email"
-  text="andreiv.tkatchenko@ojlab.ac.cn"
+  text="Email of Lab Manager:197555236@qq.com"
   tooltip="Email"
-  link="andreiv.tkatchenko@ojlab.ac.cn"
+  link="197555236@qq.com"
 %}
 {:.center}
 
@@ -94,31 +51,10 @@ nav:
   include figure.html
   image="images/OuJiangLab.webp"
   caption="Oujiang Laboratory Qihang Building"
+  width="2200px"
 %}
 
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 %}
 
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}

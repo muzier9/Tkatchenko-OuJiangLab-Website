@@ -8,7 +8,7 @@ carousels:
 left-carousels:
   - images: 
     - image: ./images/team/group_outside.jpg
-    - image: ./images/team/group_outside.jpg
+    - image: ./images/team/Research2.png
 ---
 
 # muzier9OuJiangLab
@@ -24,7 +24,8 @@ left-carousels:
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+By using patient data, mice model, and retinal organoids, our research aims to identify,
+assess, and predict genetic variations which can lead to Mendelian and complex visual disorders.
 
 {%
   include button.html
@@ -39,7 +40,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team/Research1.png"
   link="research"
   title="Our Research"
   text=text
@@ -47,7 +48,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We believe that anyone around the world should be able to use and extend our work. 
+We push to make software, tools, datasets, etc. that are freely available.
 
 {%
   include button.html
@@ -62,7 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research.png"
   link="projects"
   title="Our Projects"
   flip=true
@@ -72,7 +74,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We are a team of enthusiastic researchers and we strive to build an inclusive environment for research,
+and recognize the value of diversity in the process of discovery.
 
 {%
   include button.html
@@ -87,7 +90,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team/group_outside.jpg"
   link="team"
   title="Our Team"
   text=text

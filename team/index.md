@@ -1,9 +1,11 @@
 ---
 title: Team
 nav:
-  order: 3
+  order: 4
   tooltip: About our team
 ---
+
+{% include section.html size="test" %}
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
@@ -11,30 +13,38 @@ Our lab is made up of a highly engaged and collaborative team of researchers. We
 We foster an environment where team members are treated equally, and where we respect and admire our differences.
 The team includes faculty, postdocs, students at all levels and staff.
 
-Andrei V. Tkatchenko Group
+{% include list.html data="members" component="portrait" filters="role: ^(pi)$" %}
 
-{% include section.html %}
 
-{% include list.html data="members" component="portrait" filters="role: pi" %}
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
+{% include section.html size="test" %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+# {% include icon.html icon="fa-solid fa-users" %}Molecular Biology Group
 
-Computer Group
+{% include list.html data="members" component="portrait" filters="group: Biology, role: Group Leader" %}
+{% include list.html data="members" component="portrait" filters="group: Biology, role: Research Assistant" %}
 
-{% include section.html %}
 
-# {% include icon.html icon="fa-solid fa-users" %}Computer Group
 
-{% capture content %}
+{% include section.html size="test" %}
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
+# {% include icon.html icon="fa-solid fa-users" %}Pharmaceutical Chemistry Group
+{% include list.html data="members" component="portrait" filters="group: Chemistry, role: Group Leader" %}
+{% include list.html data="members" component="portrait" filters="group: Chemistry, role: postdoc" %}
 
-{% endcapture %}
 
-{% include grid.html style="square" content=content %}
+{% include section.html size="test" %}
+
+# {% include icon.html icon="fa-solid fa-users" %}Computational Biology Group
+
+{% include list.html data="members" component="portrait" filters="group: Computer, role: Group Leader" %}
+{% include list.html data="members" component="portrait" filters="group: Computer, role: Master" %}
+
+
+{% include section.html size="test" %}
+
+# {% include icon.html icon="fa-solid fa-users" %}Staff
+
+{% include list.html data="members" component="portrait" filters="role: Laboratory manager" %}
 
 
 {% include section.html background="images/banner.jpg" size="wide"%}

@@ -15,6 +15,10 @@ section[data-size="carousel-news"] {
   padding: $vertical-padding $horizontal-padding;
 }
 
+section[data-size="test"] {
+  padding: $padding max($padding, calc((100% - 1400px) / 2));
+}
+
 section[data-size="wide"] {
   padding: $padding;
 }
