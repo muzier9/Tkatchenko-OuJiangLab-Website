@@ -1,44 +1,90 @@
 ---
 title: Contact
 nav:
-  order: 5
+  order: 6
   tooltip: Email, address, and location
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+[Our lab](http://www.ojlab.cn/) is located at 999 Jinshi Road, Yongzhong Street, Longwan District, Wenzhou City.
+
+{:.center}
+
+<!--
+{%
+
+
+  include button.html
+
+
+  type="email"
+
+
+  text="jane@smith.com"
+
+
+  link="jane@smith.com"
+
+
+%}
+
 
 {%
+
+
   include button.html
-  type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
-%}
-{%
-  include button.html
+
+
   type="phone"
+
+
   text="(555) 867-5309"
+
+
   link="+1-555-867-5309"
+
+
 %}
+
+
 {%
+
+
   include button.html
+
+
   type="address"
+
+
   tooltip="Our location on Google Maps for easy navigation"
+
+
   link="https://www.google.com/maps"
+
+
 %}
+-->
 
 {% include section.html %}
 
 {% capture col1 %}
 
+##### Office 5013
+##### Systems genetics and pharmacogenomics of myopia Group 
+##### Ocular diseases and Visual Function Recovery Research Cluster
+##### OuJiang Lab
+##### Yongzhong Street, Longwan District, Wenzhou
+##### China
+
 {%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
+  include button.html
+  type="email"
+  text="andreiv.tkatchenko@ojlab.ac.cn"
+  tooltip="Email"
+  link="andreiv.tkatchenko@ojlab.ac.cn"
 %}
+{:.center}
 
 {% endcapture %}
 
@@ -46,13 +92,14 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
   include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
+  image="images/OuJiangLab.webp"
+  caption="Oujiang Laboratory Qihang Building"
 %}
 
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 %}
+
 
 {% include section.html dark=true %}
 

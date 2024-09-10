@@ -28,8 +28,8 @@
 :root {
   // font families
   --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
+  --heading: "Poppins", sans-serif;
+  --body: "Lora", sans-serif;
   --code: "Roboto Mono", monospace;
 
   // font sizes
@@ -43,6 +43,8 @@
   --semi-bold: 500;
   --bold: 600;
 
+
+
   // text line spacing
   --spacing: 2;
   --compact: 1.5;
@@ -51,4 +53,8 @@
   --rounded: 3px;
   --shadow: 0 0 10px 0 var(--overlay);
   --transition: 0.2s ease;
+}
+
+h5 {
+  font-family: var(--xl); /* 标题使用新字体 */
 }

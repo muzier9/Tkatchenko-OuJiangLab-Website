@@ -1,6 +1,34 @@
 {% assign image = page.footer | default: site.footer | relative_url %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
 
+<div id="container" style="width: 100%; height: 250px;"></div>
+<script type="text/javascript" src="https://api.map.baidu.com/api?type=webgl&v=1.0&ak=tyf28VWD9I7sr8Pka4e08RyfB2q4PzQq"></script>
+<script type="text/javascript">
+    // 创建地图实例
+    var map = new BMapGL.Map("container");
+    // 设置中心点及缩放级别
+    var point = new BMapGL.Point(120.812032,27.954886);
+    map.centerAndZoom(point, 18);
+    // 启用鼠标滚轮缩放功能
+    map.enableScrollWheelZoom(true);
+    // 添加标注
+    var marker = new BMapGL.Marker(point);
+    // 添加信息窗口
+    var opts = {
+    width : 10,     // 信息窗口宽度
+    height: 40,     // 信息窗口高度
+    title : "OuJiang Laboratory"  // 信息窗口标题
+}
+    var infoWindow = new BMapGL.InfoWindow('Longwan District, Wenzhou City, Zhejiang Province', opts);
+    // 点标记添加点击事件
+    marker.addEventListener('click', function () {
+        map.openInfoWindow(infoWindow, point);
+    });
+    map.addOverlay(marker);
+</script>
+
+
+
 <footer
   class="background"
   style="--image: url('{{ image }}')"
@@ -26,11 +54,20 @@
   <div>
     &copy; {{ site.time | date: "%Y" }}
     {{ site.title }}
+    &nbsp; | &nbsp;
+    <a href="http://www.ojlab.cn/">
+      OuJiang Laboratory
+    </a>
+    &nbsp; | &nbsp;
+    <a href="https://www.wmu.edu.cn/">
+      Wenzhou Medical University
+    </a>
     &nbsp; | &nbsp; Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
+    <a href="https://github.com/muzier9/Tkatchenko-OuJiangLab-Website">
+      Tkatchenko-OuJiangLab-Website
     </a>
   </div>
+
 
   <input
     type="checkbox"

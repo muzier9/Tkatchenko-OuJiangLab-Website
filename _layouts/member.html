@@ -2,23 +2,31 @@
 layout: default
 ---
 
-{% capture floatcontent %}
+<!-- 使用 Flex 布局 -->
+<div style="display: flex;">
+  <!-- 左侧区域 -->
+  <div style="flex-shrink: 0; width: 350px;">
 
-{% include portrait.html lookup=page.slug %}
+  <!-- 头像部分 -->
+  {% include portrait.html lookup=page.slug style="text-align: left;" %}
 
-<div>
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
-  {% endfor %}
-</div>
+  <!-- 链接部分 -->
+  <div style="text-align: left; margin-left: 60px">
+    {% for link in page.links %}
+      {% assign key = link[0] %}
+      {% assign value = link[1] %}
+      {% include button.html type=key link=value style="bare" %}<br>
+    {% endfor %}
+  </div>
 
-{% endcapture %}
+  <!-- 用于调整高度的空内容 -->
+    <div style="height: 100%;"></div>
+  </div>
 
-{% include float.html content=floatcontent %}
+  <!-- 右侧内容区域 -->
+  <div style="flex-grow: 1;">
+    {{ content }}
 
-{{ content }}
 
 {% assign aliases = page.aliases
   | default: page.name
@@ -42,6 +50,8 @@ layout: default
   blog/?search={{ page.name }}
 {%- endcapture %}
 
+    </div>
+</div>
 <!--
 <p class="center">
   <a href="{{ search | relative_url }}">
