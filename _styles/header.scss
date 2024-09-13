@@ -1,9 +1,9 @@
 ---
 ---
 
-$logo-big: 120px;
+$logo-big: 200px;
 $logo: 40px;
-$big-padding: 100px;
+$big-padding: 40px;
 $collapse: 700px;
 $sticky: true;
 
@@ -63,7 +63,7 @@ header a {
 
 .subtitle {
   opacity: 0.65;
-  font-weight: var(--thin);
+  
 }
 
 .nav-toggle {
@@ -101,6 +101,8 @@ nav {
   gap: 10px;
   font-family: var(--heading);
   text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 450;
 }
 
 nav > a {
@@ -150,6 +152,7 @@ header[data-big] {
     height: $logo-big;
   }
 
+
   .title-text {
     flex-direction: column;
     align-items: center;
@@ -157,10 +160,12 @@ header[data-big] {
   }
 
   .title {
-    font-size: var(--xxl);
+    font-size: 2.6rem;
+    font-weight: 900;
   }
 
   .subtitle {
-    font-size: var(--large);
+    font-size: 2rem;
+    font-weight: 600;
   }
 }

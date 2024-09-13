@@ -55,5 +55,18 @@
         </a>
       {% endif %}
     {% endfor %}
+  <!-- 语言选择器 -->
+  <div class="language-selector">
+    <select onchange="window.location.href=this.value;">
+      <!-- 如果当前语言是中文，显示“中文”并选中，否则显示“English” -->
+      {% if site.lang == "cn" %}
+        <option value="{{ relative_url }}/cn/" selected>中文</option>
+        <option value="{{ relative_url }}/">English</option>
+      {% else %}
+        <option value="{{ relative_url }}/" selected>English</option>
+        <option value="{{ relative_url }}/cn/">中文</option>
+      {% endif %}
+    </select>
+  </div>
   </nav>
 </header>

@@ -3,7 +3,7 @@ name: Tatiana V Tkatchenko, PhD
 image: images/team/Tatiana.jpg
 group: Biology
 role: Group Leader
-description: Group leader/Associate Professor
+description: Associate Professor/Group Leader
 affiliation: 
 aliases:
   - Tatiana V Tkatchenko

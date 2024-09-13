@@ -8,7 +8,7 @@ pi:
 
 Laboratory manager:
   icon: fa-solid fa-user
-  description: Laboratory manager
+  description: Laboratory Manager
 
 Research Assistant:
   icon: fa-solid fa-flask

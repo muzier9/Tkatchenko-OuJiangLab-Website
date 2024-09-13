@@ -1,7 +1,7 @@
 ---
 title: Join us
 nav:
-  order: 6
+  order: 5
   tooltip: We're hiring!
 ---
 {% include section.html dark=false%}

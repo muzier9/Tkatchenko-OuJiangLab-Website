@@ -1,11 +1,12 @@
 ---
 title: Research
 nav:
-  order: 1
+  order: 2
   tooltip: Research and Projects
 ---
 
-# <i class="fas fa-microscope"></i>Research
+# {% include icon.html icon="fa-solid fa-microscope" %}Research
+
 We pursue the goals in the following areas:
 - Identify genes and mutations underlying human diseases.
 - Systematically predict and assess the function consequence of genetic variants across the genome.

@@ -1,8 +1,10 @@
 # site properties and page defaults
-title: Andrei V. Tkatchenko Group of OuJiang Lab
-subtitle: Pharmacogenomics Lab
+title: OuJiang Pharmacogenomics Lab
+subtitle: Andrei V Tkatchenko Group
 description: This is description.
-header: images/background3.jpg
+header: images/banner.jpg
+# 在 _config.yml 中全局设置
+header-dark: false
 footer: images/background3.jpg
 proofer: false
 
@@ -50,6 +52,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-multiple-languages-plugin
 
 # code block syntax highlighting
 highlighter: rouge
@@ -71,3 +74,11 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+
+languages: ["en", "cn"]
+exclude_from_localizations: ["images"]
+
+# 语言切换配置
+i18n:
+  default_locale: "en"
+  locales: ["en", "cn"]

@@ -3,7 +3,7 @@ name: Abulkosim Nasriddinov, PhD
 image: images/team/kosim.jpg
 group: Chemistry
 role: postdoc
-description: Postdoc
+description: Postdoctoral Researcher
 affiliation: 
 aliases:
   - Abulkosim Nasriddinov

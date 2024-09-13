@@ -3,7 +3,7 @@ name: Muhammad Sohair Raza, PhD
 image: images/team/Muhammad.png
 group: Computer
 role: Group Leader
-description: Group leader/Postdoc
+description: Postdoctoral Researcher/Group Leader
 affiliation: 
 aliases:
   - Muhammad Sohair Raza

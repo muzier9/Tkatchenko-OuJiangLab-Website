@@ -9,10 +9,9 @@ left-carousels:
   - images: 
     - image: ./images/team/group_outside.jpg
     - image: ./images/team/Research2.png
+permalink: 
 ---
-
-# muzier9OuJiangLab
-
+{% translate_file home.md %}
 
 {% include section.html size="full" %}
 

@@ -1,13 +1,13 @@
 ---
 title: Contact
 nav:
-  order: 7
+  order: 6
   tooltip: Email, address, and location
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-[Our lab](http://www.ojlab.cn/) is located at 999 Jinshi Road, Yongzhong Street, Longwan District, Wenzhou City.
+[OuJiang Lab(Zhejiang Lab for Regenerative Medicne, Vision and Brain Health)](http://www.ojlab.cn/) is located at No.999 Jinshi Road, Yongzhong Street, Longwan District, Wenzhou City, Zhejiang 325001,China.
 
 {:.center}
 
@@ -15,7 +15,7 @@ nav:
 
 {% capture col1 %}
 
- <br><br>
+ <br>
  <strong>Office 5013</strong>
  {:.center}
 
@@ -25,10 +25,13 @@ nav:
  <strong>Ocular diseases and Visual Function Recovery Research Cluster</strong>
  {:.center}
 
- <strong>OuJiang Lab</strong>
+ <strong>Oujiang Laboratory</strong>
  {:.center}
 
- <strong>Yongzhong Street, Longwan District, Wenzhou</strong>
+ <strong>No.999 Jinshi Road, Longwan District, Wenzhou</strong>
+ {:.center}
+
+ <strong>Zhejiang 325001</strong>
  {:.center}
 
  <strong>China</strong>
