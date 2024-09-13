@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .portrait-wrapper {
   display: contents;
 }
@@ -8,9 +9,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px;
-  width: 175px;
-  max-width: calc(100% - 20px - 20px);
+  margin: 40px;
+  width: 220px;
   text-decoration: none;
 }
 
@@ -66,6 +66,13 @@
 .portrait-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+  white-space: nowrap; /* 防止换行 */
+}
+
+.portrait-description {
+  white-space: nowrap; /* 防止描述换行 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 超长显示省略号 */
 }
 
 .portrait[data-style=tiny] .portrait-description,

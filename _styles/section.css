@@ -7,6 +7,10 @@ section[data-size=carousel-news] {
   padding: 40px 160px;
 }
 
+section[data-size=test] {
+  padding: 40px max(40px, (100% - 1400px) / 2);
+}
+
 section[data-size=wide] {
   padding: 40px;
 }
